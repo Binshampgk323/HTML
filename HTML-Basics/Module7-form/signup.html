@@ -1,0 +1,51 @@
+<html>
+    <head><title>signup</title></head>
+    <body background="C:\Users\USER\Downloads\log.jpg">
+        <form action="signin.html">
+            
+        
+          <center>  <h1 style="font-style: italic;color: rgb(231, 17, 17);">Registration</h1>
+            <table border="0" width="350" height="300">
+            <tr>
+                <td><label style="font-size:.5cm; color: azure;">First Name:</label></td>
+                <td><input type="text" name=txtfirstname required></td>
+            </tr>
+            <tr>
+                <td><label style="font-size:0.5cm;color: azure;">Last Name:</label></td>
+                <td><input type="text" name=txtlastname required></td>
+            </tr>
+            <tr>
+                <td><label style="font-size:0.5cm;color: azure;">Date of Birth:</label></td>
+                <td><input type="date" name="date" required="required"></td>
+            </tr>
+            <tr>
+                <td><label style="font-size:0.5cm;color: azure;">Gender:</label></td>
+                <td style="font-style: italic;color: azure;"><input type="radio" name=gender>Male
+                    <input type="radio" name=gender>Female</td>
+            </tr>
+            <tr>
+                <td><label style="font-size:0.5cm;color: azure;">Email:</label></td>
+                <td><input type="email" name="txtemail" required></td>
+            </tr>
+            <tr>
+                <td><label style="font-size:0.5cm;color: azure;">Username:</label></td>
+                <td><input type="text" name="txtuser" required></td>
+            </tr>
+            <tr>
+                <td><label style="font-size:0.5cm;color: azure;">Password:</label></td>
+                <td><input type="password" required="required" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/></td>
+            </tr>
+            <tr>
+                    <td><label style="font-size:0.5cm;color: azure;">Confirm password:</label></td>
+                    <td><input type="password" required="required" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/></td>
+                </tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <td colspan="2"><center><input type="Submit" value=Register style="font-style: italic;color: darkred;"></center></td>
+            </tr>
+            </table></center>
+        </form>
+      
+        </body>
+</html>

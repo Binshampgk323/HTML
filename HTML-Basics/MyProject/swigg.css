@@ -1,0 +1,102 @@
+* {
+    box-sizing:border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px ;
+    height: 300px;
+  }
+  .row1 {
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    height: 470px;
+  }
+  .row2 {
+    width: 100%;
+    padding: 10px 0px 30px 0px;
+    height: 300px;
+  }
+  .row3 {
+    width: 100%;
+    padding: 100px 0px 30px 0px;
+    height: 690px;
+  }
+  .row4 {
+    width: 100%;
+    padding: 1900px 0px 30px 0px;
+    height: 300px;
+    background-color: rgb(17, 17, 17);
+  }
+  #b2{
+              padding: 10px 20px;
+              background: rgb(15, 15, 15);
+              color: white;
+              margin-top: 10px;
+              border: none;
+              outline: none;
+              margin-left: 30px;
+          }  
+          #b1{
+              padding: 10px 20px;
+              background: white;
+              color: rgb(17, 16, 16);
+              margin-top: 10px;
+              border: none;
+              outline: none;
+              margin-left: 30px;
+          }
+          #b1:hover{
+              color: coral;
+              
+          }
+          #i{
+              padding: 10px 20px;
+              background: white;
+              color: rgb(80, 76, 76);
+              margin-top: 10px;
+              border:solid rgb(204, 195, 192);
+              outline:burlywood;
+              margin-left: 50px;  
+          }
+          #f{
+              padding: 10px 20px;
+              background: rgb(246, 154, 4);
+              color: white;
+              margin-top: 10px;
+              border: none;
+              outline: none;
+              margin-left: 30px; 
+          }
+          #p{
+              font-size:.5cm;
+          }
+          #in{
+              padding: 30%;
+          }
+          #s1:hover{
+              background-color: white;
+              border-radius: 2mm; 
+          }
+          #s2:hover{
+              background-color: white;
+              border-radius:2mm;
+          }
+          #s{
+              background-color: white;
+              padding: 0px;
+          }
+          footer{
+              background-color: black;
+          }
+          #foot{
+          padding: 5% 50% 0% 7%;   
+        
+          }
+          #p1{
+              float: left;
+          }
+          #s3,#s4{
+              border-radius: 2mm;
+          }
