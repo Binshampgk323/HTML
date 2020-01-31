@@ -1,0 +1,21 @@
+{
+    "songs": [{
+            "name": "kalimba",
+            "artist": "Calum Scott",
+            "file": "kalimba.mp3"
+
+        },
+        {
+            "name": "Maid with the Flexen Hair",
+            "artist": "Calum Scott",
+            "file": "Maid with the Flaxen Hair.mp3"
+
+        },
+        {
+            "name": "Sleep Away",
+            "artist": "Calum Scott",
+            "file": "Sleep Away.mp3"
+
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>msg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .panel {
+            background-color: transparent;
+            color: chocolate;
+            border-radius: 3%;
+            border: none;
+        }
+        
+        #sentform {
+            margin-top: 1%;
+        }
+        
+        .glyphicon {
+            font-size: 30px;
+        }
+        
+        #collapseInbox.show {
+            background: white !important;
+        }
+        
+        p {
+            background-color: transparent;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel-group" id="accordion">
+            <!--Inbox start-->
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color:transparent; border: none; color: white;">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" style="text-decoration: none;" data-parent="#accordion" href="#collapse1"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;&nbsp;Inbox</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+
+
+                        <div class="container">
+                            <div class="panel-group" id="accordion1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">C Program</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2">Java Program</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!--Inbox End-->
+            <!--Outbox start-->
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color:transparent; color: white;">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" style="text-decoration: none;" data-parent="#accordion" href="#collapse2" style="text-decoration: none;"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;&nbsp;&nbsp;Outbox</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p id="phno"></p><br>
+                        <p id="msg"></p>
+                    </div>
+                </div>
+            </div>
+            <!--Outbox end-->
+            <!--Sent start-->
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color:transparent;  color: white;">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="text-decoration: none;"> <span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;&nbsp;Sent</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <input type="text" placeholder="Phone number" id="txtphone"><br><br>
+                        <textarea name="message" id="txtmessage" cols="22" rows="4" placeholder="Message"></textarea><br><br>
+                        <input type="submit" value="Sent" style="background-color: green; margin-left: 4%;" onclick="msgSent()">
+                    </div>
+                </div>
+            </div>
+            <!--Sent end-->
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

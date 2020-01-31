@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        input {
+            background-color: darkorange;
+            border-color: darkorange;
+            border-radius: 1%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="margin-left: 10%; margin-top: 5%;">
+        <div class="row"><input type="button" value="Click here to show timer" onclick="show();" style="background: transparent; border: none; outline: none; color: tomato;"></div>
+        <br><br><br><br>
+        <div class="row">
+
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <label id="time" style="font-size: 35px;"></label>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col"><input type="button" value="Start" onclick="start();"></div>
+            <div class="col"><input type="button" value="Stop" onclick="stop();"></div>
+            <div class="col"><input type="button" value="Reset" onclick="reset();"></div>
+        </div>
+    </div>
+</body>
+
+</html>
