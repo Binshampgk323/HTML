@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="smart.css">
+
+    <style>
+        .glyphicon {
+            font-size: 30px;
+        }
+        
+        #home {
+            margin-left: 45%;
+        }
+        
+        .panel {
+            background-color: transparent;
+            color: chocolate;
+            border-radius: 3%;
+            border: none;
+        }
+        
+        #sentform {
+            margin-top: 1%;
+        }
+        
+        .glyphicon {
+            font-size: 30px;
+        }
+        
+        #collapseInbox.show {
+            background: white !important;
+        }
+        
+        p {
+            background-color: transparent;
+        }
+    </style>
+    <script>
+        window.onload = function tTime() {
+            var today = new Date();
+            var hr = today.getHours();
+            var min = today.getMinutes();
+            min = checkTime(min);
+            document.getElementById('hd').innerHTML = hr + ":" + min;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="smart-watch.jpg" alt="Nature" style="width:100%;">
+        <div class="text-block">
+            <div class="row" id="header">
+                <p id="titlename">Message</p>
+                <p id="hd"></p>
+            </div>
+            <div class="row" id="main">
+                <div class="container">
+                    <div class="panel-group" id="accordion">
+                        <!--Inbox start-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color:transparent; border: none; color: white;">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" style="text-decoration: none;" data-parent="#accordion" href="#collapse1"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;&nbsp;Inbox</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div id="accordion1" class="panel-group">
+                                        <div class="panel panel-default">
+                                            <div class="panel-head">
+                                                <a class="btn" data-parent="#accordion1" style="color: chocolate;" data-toggle="collapse" href="#collapseC" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    C Program
+                                                </a>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="collapse" id="collapseC">
+                                                    <div class="card card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-head">
+                                                <a class="btn " style="color: chocolate;" data-parent="#accordion1" data-toggle="collapse" href="#collapseJ" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Java Program
+                                            </a>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="collapse" id="collapseJ">
+                                                    <div class="card card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Inbox End-->
+                        <!--Outbox start-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color:transparent; color: white;">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" onclick="viewMsg()" style="text-decoration: none;" data-parent="#accordion" href="#collapse2" style="text-decoration: none;"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;&nbsp;&nbsp;Outbox</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div id="accordion1" class="panel-group">
+                                        <div class="panel panel-default">
+                                            <div class="panel-head">
+                                                <a class="btn" data-parent="#accordion1" style="color: chocolate;" data-toggle="collapse" href="#collapsem" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    9867654323
+                                                </a>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="collapse" id="collapsem">
+                                                    <div class="card card-body">
+                                                        Hai hello
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-head">
+                                                <a class="btn " style="color: chocolate;" data-parent="#accordion1" data-toggle="collapse" href="#collapsen" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                8976544321
+                                            </a>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="collapse" id="collapsen">
+                                                    <div class="card card-body">
+                                                        hello
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Outbox end-->
+                        <!--Sent start-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color:transparent;  color: white;">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" onclick="viewMsg()" href="#collapse3" style="text-decoration: none;"> <span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;&nbsp;Sent</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <form onsubmit="msgSent()">
+                                        <input type="text" placeholder="Phone number" id="txtphone" pattern="^[0-9]{10}$" required><br><br>
+                                        <textarea name="message" id="txtmessage" cols="22" rows="4" placeholder="Message" required></textarea><br><br>
+                                        <input type="submit" value="Send" style="background-color: green; margin-left: 4%;">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sent end-->
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="footer">
+                <div class="col col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                    <form action="smartMsg.html" id="f1"></form>
+                    <button form="f1"><i class="fa fa-comments fa-sm" aria-hidden="true"></i></button></div>
+                <div class="col  col-lg-4 col-sm-4 col-md-4 col-xs-12"><button onclick="openMusic()"><i class="fa fa-music fa-sm" aria-hidden="true"></i></button></div>
+                <div class="col  col-lg-4 col-sm-4 col-md-4 col-xs-12"><button onclick="openClock()"><i class="fa fa-clock-o fa-sm" aria-hidden="true"></i></button></div>
+            </div><br><br><br><br><br>
+            <a href="SmartWatch.html" id="home"><span class="glyphicon glyphicon-home"></span></a>
+
+        </div>
+    </div>
+</body>
+<script src="smartjs.js"></script>
+
+</html>
